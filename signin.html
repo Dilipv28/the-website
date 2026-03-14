@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up page</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signup-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 { margin-bottom: 20px; font-weight: 300; }
+        
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            box-sizing: border-box;
+        }
+
+        
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+        }
+
+        .footer-text { font-size: 0.8em; margin-top: 20px; color: #888; }
+        .footer-text a { color: #00d2ff; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="signup-card">
+        <h2><span style="color:cyan;">Sign Up </span></h2>
+        <p>Create youraccount</p>
+        <form action="/welcome-page">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            
+            <button type="submit" class="btn-submit">Initialize Account</button>
+            <h3>or</h3>
+
+            <button  onclick="window.location.href='https://accounts.google.com/v3/signin/identifier?dsh=S925833456%3A1773470160470425&ifkv=ASfE1-qpvgxRQTFbWfWMEaQJOeypuFHux91CJEJ9H-rh2yATtOC-DMdGeJT2ChNtM1BxUEey1_-CmA&flowName=GlifWebSignIn&flowEntry=ServiceLogin';"class="btn-submit"">Continue with Google </button>
+            <button onclick="window.location.href='https://www.facebook.com';" class="btn-submit">Continue with Facebook</button>
+            <button onclick="window.location.href='https://www.twitter.com';" class="btn-submit">Continue with Twitter</button>
+        </form>
+
+        <div class="footer-text">
+            Already have an account? <a href="file:///F:/dproject/website/form.html">Sign In</a>
+        </div>
+    </div>
+
+</body>
+</html>
