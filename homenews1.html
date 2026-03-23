@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Balanced Magazine</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfbf8;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .about-section {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        /* Philosophy Header */
+        .philosophy {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 120px;
+            align-items: center;
+        }
+
+        .philosophy h2 {
+            font-family: 'Georgia', serif;
+            font-size: 4rem;
+            line-height: 1;
+            letter-spacing: -2px;
+            color: #1a1a1a;
+        }
+
+        .philosophy-text p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+        }
+
+        /* The Mission Statement */
+        .mission-statement {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 120px auto;
+            padding: 60px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .mission-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #8b7e66;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .mission-statement h3 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        /* Team / Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+        }
+
+        .value-item h4 {
+            font-family: 'Georgia', serif;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #8b7e66;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .value-item p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .philosophy { grid-template-columns: 1fr; gap: 40px; }
+            .philosophy h2 { font-size: 2.5rem; }
+            .values-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-section">
+        <div class="philosophy">
+            <h2>The Art of<br>Intentional<br>Living.</h2>
+            <div class="philosophy-text">
+                <p>"We believe that the spaces we inhabit and the stories we consume should be curated with the same care as the lives we lead."</p>
+                <p style="font-family: 'Inter', sans-serif; font-style: normal; font-size: 1rem;">Founded in 2024, Balanced Magazine was born out of a desire for a slower, more thoughtful digital experience. We move away from the 'breakneck' speed of news and focus on timeless design, mental clarity, and human-centric architecture.</p>
+            </div>
+        </div>
+
+        <div class="mission-statement">
+            <span class="mission-label">OUR MISSION</span>
+            <h3>To provide a sanctuary for the modern mind, blending the aesthetic of print with the accessibility of the digital age.</h3>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-item">
+                <h4>Curation</h4>
+                <p>We don't publish everything. We publish the right things. Every article is chosen for its ability to inspire or inform.</p>
+            </div>
+            <div class="value-item">
+                <h4>Aesthetics</h4>
+                <p>Beauty is a function. A clean design leads to a clean mind, allowing our readers to focus on what truly matters.</p>
+            </div>
+            <div class="value-item">
+                <h4>Integrity</h4>
+                <p>Our stories are researched and deeply felt. We prioritize human voices over algorithmic trends.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

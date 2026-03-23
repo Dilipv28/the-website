@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News | Balanced Journal</title>
+    <style>
+        /* Shared Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfbf8;
+            color: #333;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+
+        /* News Header */
+        .news-header {
+            border-bottom: 2px solid #1a1a1a;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 10px;
+        }
+
+        .news-header h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #8b7e66;
+        }
+
+        /* News Layout */
+        .news-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+        }
+
+        /* Main Feed */
+        .news-item {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .news-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .news-item:hover img { filter: grayscale(0%); }
+
+        .news-content h3 {
+            font-family: 'Georgia', serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .news-content p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .time-stamp {
+            font-size: 0.75rem;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        /* Sidebar Briefs */
+        .sidebar-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .brief-item {
+            margin-bottom: 25px;
+        }
+
+        .brief-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .brief-item .meta {
+            font-size: 0.75rem;
+            color: #8b7e66;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .news-layout { grid-template-columns: 1fr; }
+            .news-item { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="news-header">
+            <h2>The Bulletin</h2>
+            <span class="date">Monday, March 23, 2026</span>
+        </header>
+
+        <div class="news-layout">
+            <main class="news-feed">
+                <article class="news-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZMjPF3mu8VnpKpThNUGQhSWl-4E3-ZOA62w&s" alt="Architecture">
+                    <div class="news-content">
+                        <span class="time-stamp">2 hours ago — Design</span>
+                        <h3>New Urban Study Reveals the Psychological Impact of Green Rooftops</h3>
+                        <p>Cities across Scandinavia are reporting a 15% increase in resident well-being following the new "Green Skyline" initiative...</p>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOficSXrET_BxM_sz8ILl3NGkxmnOpJCtPSw&s" alt="Tech">
+                    <div class="news-content">
+                        <span class="time-stamp">5 hours ago — Tech</span>
+                        <h3>The "Analog Renaissance": Why Gen Z is Swapping Smartphones for Film</h3>
+                        <p>Sales of 35mm film have reached a ten-year high as younger generations look to disconnect from the digital fatigue.</p>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCquyrp_i0ekh6gKdaa8E7r-tV6GPomlCaRw&s" alt="Work">
+                    <div class="news-content">
+                        <span class="time-stamp">Yesterday — Productivity</span>
+                        <h3>The Four-Day Week: Results from the Global Pilot are In</h3>
+                        <p>Productivity levels remained stable while employee burnout rates plummeted by nearly 40% across participating firms.</p>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Quick Briefs</h3>
+                
+                <div class="brief-item">
+                    <span class="meta">CULTURE</span>
+                    <h4>Tokyo hosts the world’s first "Silent Architecture" exhibition.</h4>
+                </div>
+
+                <div class="brief-item">
+                    <span class="meta">ECONOMY</span>
+                    <h4>Renewable energy investments surpass fossil fuels for the third quarter.</h4>
+                </div>
+
+                <div class="brief-item">
+                    <span class="meta">HEALTH</span>
+                    <h4>The scientific benefits of a 10-minute "Morning Sit" without devices.</h4>
+                </div>
+
+                <div class="brief-item">
+                    <span class="meta">BOOKS</span>
+                    <h4>Shortlist announced for the 2026 International Design Awards.</h4>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+</body>
+</html>
