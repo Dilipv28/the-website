@@ -1,327 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn HTML | Simple Guide</title>
     <link rel="stylesheet" href="styles1.css">
 </head>
+
 <body>
 
     <header>
-        
-   
 
-    <nav>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFRRTDZpaNEE25iN-rem_UUHWkdtcBjJEzPA&s" alt="html-image" width="100px" height="100px">
-        <h1>HTML</h1>
-        <a href="#intro" onclick="menu_selector(this)" id="intro">Introduction</a>
-        <a href="#attributes" onclick="menu_selector(this)" id="attributes">attributes</a>
-        <a href="#semantic" onclick="menu_selector(this)" id="semantic">Semantic HTML</a>
-        <a href="#quiz" onclick="menu_selector(this)" id="quiz">Quiz</a>
-        <a href="#css" onclick="menu_selector(this)" id="css">CSS</a>
-        <a href="#references" onclick="menu_selector(this)" id="references">References</a>        
-    </nav>
-</header>
+
+        <aside class="glass-sidebar">
+            <nav>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6173Tzs4J96ZRSehnBG7uJBXIJ38wE9XoAA&s"
+                    alt="html-image" width="100px" height="100px">
+                <h1>HTML</h1>
+                <a href="#intro" onclick="menu_selector(this)" id="intro">Intro</a>
+                <a href="#attributes" onclick="menu_selector(this)" id="attributes">attributes</a>
+                <a href="#tags" onclick="menu_selector(this)" id="tags">Tags</a>
+                <a href="#quiz" onclick="menu_selector(this)" id="quiz">Quiz</a>
+                <a href="#references" onclick="menu_selector(this)" id="references">References</a>
+            </nav>
+        </aside>
+    </header>
     <main>
-<section id="secintro"> 
+        <section id="secintro">
             <h2>Introduction</h2>
-    <p>HTML stands for <strong>HyperText Markup Language</strong>(HTML) is the standard markup language[a] for documents designed to be displayed in a web browser.<br>It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.<br>
-     Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. </p>
-     <p>HTML describes the structure of a web page semantically and originally included cues for its appearance.</p>
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbS7-kkVS2oIh2wqRLg28byxJ1PASXczABgw&s" alt="image" width="800px">
-     <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.<br> A form of HTML, known as HTML5, is used to display video and audio, primarily using the <canvas> element, together with JavaScript.</p>
-    <p>Another important component is the HTML document type declaration, which triggers standards mode rendering.</p>
-    <p><em>The following is an example of the classic <strong>"Hello, World!"</strong> program:</em></p> 
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6jLO7JhRAlE3VTxbtN-u25qrWlUVd8pBFQ&s" alt="image"   width="800px">
-<br>
+            <p>HTML stands for <strong>HyperText Markup Language</strong>(HTML) is the standard markup language[a] for
+                documents designed to be displayed in a web browser.<br>It defines the content and structure of web
+                content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting
+                languages such as JavaScript.<br>
+                Web browsers receive HTML documents from a web server or from local storage and render the documents
+                into multimedia web pages. </p>
+            <p>HTML describes the structure of a web page semantically and originally included cues for its appearance.
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbS7-kkVS2oIh2wqRLg28byxJ1PASXczABgw&s"
+                alt="image" width="800px">
+            <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior
+                and content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide
+                Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has
+                encouraged the use of CSS over explicit presentational HTML since 1997.<br> A form of HTML, known as
+                HTML5, is used to display video and audio, primarily using the <canvas> element, together with
+                    JavaScript.</p>
+            <p>Another important component is the HTML document type declaration, which triggers standards mode
+                rendering.</p>
+            <p><em>The following is an example of the classic <strong>"Hello, World!"</strong> program:</em></p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6jLO7JhRAlE3VTxbtN-u25qrWlUVd8pBFQ&s"
+                alt="image" width="800px">
+            <br>
             <h3>markup language</h3>
-           <p>HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. HTML tags most commonly come in pairs like h1 and /h1, although some represent empty elements and so are unpaired, for example img. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).</p>
-        <br>
-            <h3>elements</h3>
-            <p>HTML documents imply a structure of nested HTML elements. These are indicated in the document by HTML tags, enclosed in angle brackets</p>
-            <p>In the simple, general case, the extent of an element is indicated by a pair of tags: a "start tag"  and "end tag" . The text content of the element, if any, is placed between these tags.</p>
-           <h2><strong>Headings:</strong></h2>
-           <ul>
-            <li><h2>Heading level 1</h2></li>
-            <li><h2>Heading level 2</h2></li>
-            <li><h3>Heading level 3</h3></li>
-            <li><h4>Heading level 4</h4></li>
-            <li><h5>Heading level 5</h5></li>
-            <li><h6>Heading level 6</h6></li>
-           </ul>
-           <h3>Example</h3>
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJKLzoGRsTcM7A7jbXX-jxz7FbyE9ePKQA4Q&s" alt="Sample Image" width="750px" height="400px">
-           <br>
+            <p>HTML markup consists of several key components, including those called tags (and their attributes),
+                character-based data types, character references and entity references. HTML tags most commonly come in
+                pairs like h1 and /h1, although some represent empty elements and so are unpaired, for example img. The
+                first tag in such a pair is the start tag, and the second is the end tag (they are also called opening
+                tags and closing tags).</p>
+            <br>
+
             <h3>watch this:</h3>
-            <video  source src="video.mp4" controls
-            width="750px" height="400px" style=display:center>
-         </video>
-         
-</section>
-<section id="secattributes" hidden="true" >
+            <video source src="video.mp4" controls width="750px" height="400px" style=display:center>
+            </video>
+            <br><br>
+            <h2>Learning about HTML</h2>
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="openTab(event, 'tab1')">Html</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tab2')">Attributes</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tab3')">Css</button>
+                </div>
+
+                <div id="tab1" class="tab-content active-content">
+                    <h3>Html</h3>
+                    <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages.</p>
+                </div>
+                <div id="tab2" class="tab-content">
+                    <h3>Attributes</h3>
+                    <p>Attributes provide additional information about HTML elements.</p>
+                </div>
+                <div id="tab3" class="tab-content">
+                    <h3>Css</h3>
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a
+                        document
+                        written in HTML.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="secattributes" hidden="true">
             <h2>attributes</h2>
             <p>There are several common attributes that may appear in many elements:</p>
             <ul>
-              <li>The <strong>id</strong> attribute provides a document-wide unique identifier for an element. <br>This is used to identify the element so that stylesheets can alter its presentational properties, and scripts may alter, animate or delete its contents or presentation.</li>
-            <li>The <strong>class</strong> attribute provides a way of classifying similar elements. This can be used for semantic or presentation purposes. For example, an HTML document might semantically use the designation <class="notation"> to indicate that all elements with this class value are subordinate to the main text of the document.</li>
-            <li>The <strong>title</strong> attribute is used to attach a subtextual explanation to an element. In most browsers this attribute is displayed as a tooltip.</li>
-            <li>The <strong>lang</strong> attribute identifies the natural language of the element's contents, which may be different from that of the rest of the document. For example, in an English-language document.</li>
+                <li>The <strong>id</strong> attribute provides a document-wide unique identifier for an element.
+                    <br>This is used to identify the element so that stylesheets can alter its presentational
+                    properties, and scripts may alter, animate or delete its contents or presentation.
+                </li>
+                <li>The <strong>class</strong> attribute provides a way of classifying similar elements. This can be
+                    used for semantic or presentation purposes. For example, an HTML document might semantically use the
+                    designation <class="notation"> to indicate that all elements with this class value are subordinate
+                        to the main text of the document.</li>
+                <li>The <strong>title</strong> attribute is used to attach a subtextual explanation to an element. In
+                    most browsers this attribute is displayed as a tooltip.</li>
+                <li>The <strong>lang</strong> attribute identifies the natural language of the element's contents, which
+                    may be different from that of the rest of the document. For example, in an English-language
+                    document.</li>
             </ul>
             <h3>The src Attribute</h3>
-            <p>The img tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</p>
-           <p>There are two ways to specify the URL in the src attribute:</p>
-             <ul>
-            <li><strong>1. Absolute URL</strong>- Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</li>
-            <li><em>Notes:</em> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</li>
-            <li><strong>2. Relative URL</strong> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</li>
-            <li><em>Tip:</em> It is almost always best to use relative URLs. They will not break if you change domain.</li>
+            <p>The img tag is used to embed an image in an HTML page. The src attribute specifies the path to the image
+                to be displayed:</p>
+            <p>There are two ways to specify the URL in the src attribute:</p>
+            <ul>
+                <li><strong>1. Absolute URL</strong>- Links to an external image that is hosted on another website.
+                    Example: src="https://www.w3schools.com/images/img_girl.jpg".</li>
+                <li><em>Notes:</em> External images might be under copyright. If you do not get permission to use it,
+                    you may be in violation of copyright laws. In addition, you cannot control external images; it can
+                    suddenly be removed or changed.</li>
+                <li><strong>2. Relative URL</strong> - Links to an image that is hosted within the website. Here, the
+                    URL does not include the domain name. If the URL begins without a slash, it will be relative to the
+                    current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to
+                    the domain. Example: src="/images/img_girl.jpg".</li>
+                <li><em>Tip:</em> It is almost always best to use relative URLs. They will not break if you change
+                    domain.</li>
             </ul>
             <h3>Data types</h3>
-             <p>HTML defines several data types for element content, such as script data and stylesheet data, and a plethora of types for attribute values, including IDs, names, URIs, numbers, units of length, languages, media descriptors, colors, character encodings, dates and times, and so on. <br>All of these data types are specializations of character data.</p>
-           <p><a href="https://html.com/" target="_blank">Learn More</a></p>
-</section>
-<section id="secsemantic" hidden="true">
-            <h2>Semantic HTML</h2>
-            <p>Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation. For example, a <strong>p</strong> element indicates that the enclosed text is a paragraph, while a <strong>table</strong> element indicates that the enclosed text is a table. This is in contrast to non-semantic elements like <strong>div</strong> and <strong>span</strong>, which tell nothing about their content.</p>
+            <p>HTML defines several data types for element content, such as script data and stylesheet data, and a
+                plethora of types for attribute values, including IDs, names, URIs, numbers, units of length, languages,
+                media descriptors, colors, character encodings, dates and times, and so on. <br>All of these data types
+                are specializations of character data.</p>
+            <h3>Transitional versus strict</h3>
+            <p>HTML 4 defined three different versions of the language: Strict, Transitional (once called Loose), and
+                Frameset. The Strict version is intended for new documents and is considered best practice, while the
+                Transitional and Frameset versions were developed to make it easier to transition documents that
+                conformed to older HTML specifications or did not conform to any specification to a version of HTML 4.
+                The Transitional and Frameset versions allow for presentational markup, which is omitted in the Strict
+                version. Instead, cascading style sheets are encouraged to improve the presentation of HTML documents.
+                Because XHTML 1 only defines an XML syntax for the language defined by HTML 4, the same differences
+                apply to XHTML 1 as well.</p>
+            <p><a href="https://html.com/" target="_blank">Learn More</a></p>
+
+        </section>
+        <section id="secquiz" hidden="true">
+            <h2>Wanna try some quiz on HTML?</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAksVHbZfHNz4c2g0U53KlMqeCogNW6S248S5uP6Y95ua1ig/viewform"
+                target="_blank"><button><em>Click here to Take the Quiz</em></button></a>
+        </section>
+
+        <section id="sectags" hidden="true">
+            <h3>elements</h3>
+            <p>HTML documents imply a structure of nested HTML elements. These are indicated in the document by HTML
+                tags, enclosed in angle brackets</p>
+            <p>In the simple, general case, the extent of an element is indicated by a pair of tags: a "start tag" and
+                "end tag" . The text content of the element, if any, is placed between these tags.</p>
+            <h2><strong>Headings:</strong></h2>
+            <ul>
+                <li>
+                    <h2>Heading level 1</h2>
+                </li>
+                <li>
+                    <h2>Heading level 2</h2>
+                </li>
+                <li>
+                    <h3>Heading level 3</h3>
+                </li>
+                <li>
+                    <h4>Heading level 4</h4>
+                </li>
+                <li>
+                    <h5>Heading level 5</h5>
+                </li>
+                <li>
+                    <h6>Heading level 6</h6>
+                </li>
+            </ul>
+            <h3>Example</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJKLzoGRsTcM7A7jbXX-jxz7FbyE9ePKQA4Q&s"
+                alt="Sample Image" width="750px" height="400px">
+            <br>
+            <h3>HTML Application</h3>
+            <p>An HTML Application (HTA; file extension .hta) is a Microsoft Windows application that uses HTML and
+                Dynamic HTML in a browser to provide the application's graphical interface. A regular HTML file is
+                confined to the security model of the web browser's security, communicating only to web servers and
+                manipulating only web page objects and site cookies. An HTA runs as a fully trusted application and
+                therefore has more privileges, like creation/editing/removal of files and Windows Registry entries.
+                Because they operate outside the browser's security model, HTAs cannot be executed via HTTP, but must be
+                downloaded (just like an EXE file) and executed from local file system.</p>
+            <h3>HTML4 variations</h3>
+            <p>Since its inception, HTML and its associated protocols gained acceptance relatively quickly. However, no
+                clear standards existed in the early years of the language. Though its creators originally conceived of
+                HTML as a semantic language devoid of presentation details,[95] practical uses pushed many
+                presentational elements and attributes into the language, driven largely by the various browser vendors.
+                The latest standards surrounding HTML reflect efforts to overcome the sometimes chaotic development of
+                the language and to create a rational foundation for building both meaningful and well-presented
+                documents. To return HTML to its role as a semantic language, the W3C has developed style languages such
+                as CSS and XSL to shoulder the burden of presentation. In conjunction, the HTML specification has slowly
+                reined in the presentational elements.</p>
+            <br>
+            <h2 style="background-image: linear-gradient(to right, lightyellow, #4ecdc4);">Semantic HTML</h2>
+            <p>Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just
+                presentation. For example, a <strong>p</strong> element indicates that the enclosed text is a paragraph,
+                while a <strong>table</strong> element indicates that the enclosed text is a table. This is in contrast
+                to non-semantic elements like <strong>div</strong> and <strong>span</strong>, which tell nothing about
+                their content.</p>
             <p>Using semantic elements correctly can improve accessibility, SEO, and code readability.</p>
-         <br><h3>Why Use Semantic HTML?</h3>
-<p><strong>Accessibility:</strong> Screen readers and other assistive technologies use these tags to identify landmarks (like navigation or main content),<br>allowing users with visual impairments to navigate a page much more effectively.
-<p><strong>SEO Boost:</strong>Search engines like Google use semantic tags to better understand the hierarchy and context of your content, which can improve your site's ranking and help it appear in rich results.
-<p><strong>Code Maintainability:</strong> Semantic markup is easier for developers to read and understand at a glance, making it simpler to update and maintain the codebase.</p>
-<p><strong>Future-Proofing:</strong> It follows official W3C standards, ensuring your site remains compatible with future browsers and emerging technologies like AI agents.</p>
- 
-   <br>
-   <h3>HTTP</h3>
-    <p>HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the web. It defines how messages are formatted and transmitted, and what actions web servers and browsers should take in response to various commands.</p>
-    <p>HTTP operates as a request-response protocol in the client-server computing model. A web browser, for example, may be the client and an application running on a computer hosting a website may be the server. The client submits an HTTP request to the server; then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.</p>
-    <p>This meta data usually includes the MIME type (e.g., text/html or application/xhtml+xml) and the character encoding (see Character encodings in HTML)</p>
-    <p>In modern browsers, the MIME type that is sent with the HTML document may affect how the document is initially interpreted. A document sent with the XHTML MIME type is expected to be well-formed XML; syntax errors may cause the browser to fail to render it. The same document sent with the HTML MIME type might be displayed successfully since some browsers are more lenient with HTML.</p>
-    <br>
-   <h3>HTML5</h3>
-    <p>HTML5 is the fifth and current major version of the HTML standard. It introduces new semantic elements, improved form handling, and enhanced multimedia support.</p>
-    <p>Key features of HTML5 include:</p>
-<p><ul>
-    <li><strong>New Semantic Elements:</strong> Elements like <em>header, footer, article, and section</em> provide better structure and meaning to web content.</li>
-    <li><strong>Multimedia Support:</strong> The <em>video and  audio</em> elements allow for native embedding of media without the need for plugins.</li>
-    <li><strong>Canvas Element:</strong> The <em>canvas</em> element enables dynamic, scriptable rendering of 2D shapes and bitmap images, making it ideal for games and interactive graphics.</li>
-    <li><strong>Improved Form Handling:</strong> New input types (e.g   email, date, range) and attributes (e.g. placeholder, required) enhance user experience and validation.</li>
-    <li><strong>Offline Capabilities:</strong> The Application Cache allows web applications to function without an internet connection.</li>
-    <li><strong>Enhanced Accessibility:</strong> ARIA (Accessible Rich Internet Applications) attributes improve accessibility for users with disabilities.</li>
-</ul></p>
-</section>
-<section id="seccss" hidden="true">
-    <h2>CSS</h2>
-    <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS defines how elements should be displayed on screen, on paper, or in other media.</p>
-    <p>CSS allows you to control the layout, colors, fonts, and overall visual appearance of your web pages. It works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed.</p>
-    <p>Key features of CSS include:</p>
-    <ul>
-        <li><strong>Selectors:</strong> CSS selectors allow you to target specific HTML elements based on their type, class, id, attributes, and more.</li>
-        <li><strong>Box Model:</strong> The CSS box model describes the rectangular boxes generated for elements in the document tree and consists of margins, borders, padding, and the actual content.</li>
-        <li><strong>Responsive Design:</strong> Media queries enable you to create designs that adapt to different screen sizes and devices.</li>
-        <li><strong>Flexbox and Grid:</strong> These layout models provide powerful tools for creating complex and flexible web layouts.</li>
-        <li><strong>Animations and Transitions:</strong> CSS allows you to create smooth animations and transitions to enhance user experience.</li>
-    </ul>
-    <h3>HTML Application</h3>
-    <p>An HTML Application (HTA; file extension .hta) is a Microsoft Windows application that uses HTML and Dynamic HTML in a browser to provide the application's graphical interface. A regular HTML file is confined to the security model of the web browser's security, communicating only to web servers and manipulating only web page objects and site cookies. An HTA runs as a fully trusted application and therefore has more privileges, like creation/editing/removal of files and Windows Registry entries. Because they operate outside the browser's security model, HTAs cannot be executed via HTTP, but must be downloaded (just like an EXE file) and executed from local file system.</p>
-    <h3>HTML4 variations</h3>
-    <p>Since its inception, HTML and its associated protocols gained acceptance relatively quickly. However, no clear standards existed in the early years of the language. Though its creators originally conceived of HTML as a semantic language devoid of presentation details,[95] practical uses pushed many presentational elements and attributes into the language, driven largely by the various browser vendors. The latest standards surrounding HTML reflect efforts to overcome the sometimes chaotic development of the language[96] and to create a rational foundation for building both meaningful and well-presented documents. To return HTML to its role as a semantic language, the W3C has developed style languages such as CSS and XSL to shoulder the burden of presentation. In conjunction, the HTML specification has slowly reined in the presentational elements.</p>
-    <br>
-    <h3>HTML5</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7peET5rzvP0fmh10qwxleQEud8nMyvPogA&s" alt="image" width="800px">
-    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231208182253/html-for-web-design.webp" alt="image" width="800px" height="480px">
-    <br>
-<h2>Questions??</h2>
-<h3><strong>Is HTML a Programming Language?</strong></h3>
-<p><em>HTML, or Hypertext Markup Language, is technically not a programming language. Instead, it is a markup language that structures the content and defines the layout of a web page. HTML uses tags and elements to describe the different components of a webpage, such as headings, paragraphs, images, links, and more. These elements provide structure and meaning to the content but lack the dynamic capabilities found in traditional programming languages.</em></p>
- <h3><strong>Is CSS a Programming Language?</strong></h3>
-<p><em>Similarly to HTML, CSS is not classified as a programming language either. CSS stands for Cascading Style Sheets and is responsible for the visual presentation and styling of web pages. It works in conjunction with HTML by adding design elements like colors, fonts, layouts, and animations to enhance the overall user experience. CSS operates by selecting HTML elements and applying specific rules to control their appearance, positioning, and behavior.</em></p>
-<h3><strong>HTML vs CSS</strong></h3>
-<p><em>While both HTML and CSS are integral parts of web development, they serve distinct purposes:</em></p>
-<p>As mentioned earlier, HTML is responsible for structuring the content of a web page. It defines the different components and their hierarchy, determining how information is organized. HTML tags provide semantic meaning to the content, enabling web browsers and search engines to understand the structure of the page. HTML forms the foundation of a website, acting as the skeletal structure on which CSS brings life and style.</p>
-<br>
-<p>On the other hand, CSS focuses on the visual aspects of a web page. It controls the layout, colors, fonts, and other aesthetic elements that determine the look and feel of the content. By separating the presentation layer from the structure defined by HTML, CSS allows developers to create consistent and visually appealing designs across multiple web pages. Additionally, CSS provides responsiveness, enabling websites to adapt their layout to different screen sizes and devices.
-<br>
-<h3><strong>Collaborative Relationship: HTML and CSS</strong></h3>
-<p>HTML and CSS work together collaboratively to create web pages that are both visually appealing and semantically structured. HTML defines the underlying content and organizes it into meaningful sections using tags and elements. CSS then takes over, leveraging selectors and rules to style the HTML elements and transform them into a visually pleasing presentation.</p>
-<br>
-<p>It's important to note that while HTML and CSS are distinct technologies, learning them together is essential for aspiring web developers. Mastery of both languages allows developers to create engaging and responsive websites that offer optimal user experiences. </p>
-<br>
-<h3><strong>The Evolution of HTML and CSS</strong></h3>
-<p>HTML and CSS have evolved over time to keep up with the changing demands of web development. New versions and specifications are introduced to introduce modern features, improve accessibility, and ensure compatibility across different browsers and devices.</p>
-<p>HTML5, the latest version of HTML, introduced numerous new elements and APIs, including video and audio support, canvas for graphics rendering, geolocation, local storage, and semantic tags like<em>(header, nav, section, and article)</em>. These additions made it easier to create rich, interactive web experiences.</p>
-<p>CSS3 brought significant advancements to CSS, including rounded corners, gradients, shadows, media queries for responsive design, flexible box layout (Flexbox), and grid-based layout (CSS Grid). These features empowered developers to create visually stunning and highly adaptable web designs.
-<p><em>In conclusion</em>, HTML and CSS are not programming languages in the traditional sense but are critical components of web development. HTML structures and provides meaning to content, while CSS adds visual styles and layout. Together, they form the foundation for building captivating and user-friendly websites. By understanding their unique roles and capabilities, aspiring web developers can leverage the power of HTML and CSS to create remarkable online experiences.</p>
+            <br>
+            <h3>Why Use Semantic HTML?</h3>
+            <p><strong>Accessibility:</strong> Screen readers and other assistive technologies use these tags to
+                identify landmarks (like navigation or main content),<br>allowing users with visual impairments to
+                navigate a page much more effectively.
+            <p><strong>SEO Boost:</strong>Search engines like Google use semantic tags to better understand the
+                hierarchy and context of your content, which can improve your site's ranking and help it appear in rich
+                results.
+            <p><strong>Code Maintainability:</strong> Semantic markup is easier for developers to read and understand at
+                a glance, making it simpler to update and maintain the codebase.</p>
+            <p><strong>Future-Proofing:</strong> It follows official W3C standards, ensuring your site remains
+                compatible with future browsers and emerging technologies like AI agents.</p>
+
+            <br>
+            <h3>HTTP</h3>
+            <p>HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the web. It defines how
+                messages are formatted and transmitted, and what actions web servers and browsers should take in
+                response to various commands.</p>
+            <p>HTTP operates as a request-response protocol in the client-server computing model. A web browser, for
+                example, may be the client and an application running on a computer hosting a website may be the server.
+                The client submits an HTTP request to the server; then the server returns a response to the client. The
+                response contains status information about the request and may also contain the requested content.</p>
+            <p>This meta data usually includes the MIME type (e.g., text/html or application/xhtml+xml) and the
+                character encoding (see Character encodings in HTML)</p>
+            <p>In modern browsers, the MIME type that is sent with the HTML document may affect how the document is
+                initially interpreted. A document sent with the XHTML MIME type is expected to be well-formed XML;
+                syntax errors may cause the browser to fail to render it. The same document sent with the HTML MIME type
+                might be displayed successfully since some browsers are more lenient with HTML.</p>
+            <br>
+            <h3>HTML5</h3>
+            <p>HTML5 is the fifth and current major version of the HTML standard. It introduces new semantic elements,
+                improved form handling, and enhanced multimedia support.</p>
+            <p>Key features of HTML5 include:</p>
+            <p>
+            <ul>
+                <li><strong>New Semantic Elements:</strong> Elements like <em>header, footer, article, and section</em>
+                    provide better structure and meaning to web content.</li>
+                <li><strong>Multimedia Support:</strong> The <em>video and audio</em> elements allow for native
+                    embedding of media without the need for plugins.</li>
+                <li><strong>Canvas Element:</strong> The <em>canvas</em> element enables dynamic, scriptable rendering
+                    of 2D shapes and bitmap images, making it ideal for games and interactive graphics.</li>
+                <li><strong>Improved Form Handling:</strong> New input types (e.g email, date, range) and attributes
+                    (e.g. placeholder, required) enhance user experience and validation.</li>
+                <li><strong>Offline Capabilities:</strong> The Application Cache allows web applications to function
+                    without an internet connection.</li>
+                <li><strong>Enhanced Accessibility:</strong> ARIA (Accessible Rich Internet Applications) attributes
+                    improve accessibility for users with disabilities.</li>
+            </ul>
+            </p>
+            <h3>HTML5</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7peET5rzvP0fmh10qwxleQEud8nMyvPogA&s"
+                alt="image" width="800px">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231208182253/html-for-web-design.webp"
+                alt="image" width="800px" height="480px">
+            <br>
+            <h2>Questions??</h2>
+            <h3><strong>Is HTML a Programming Language?</strong></h3>
+            <p><em>HTML, or Hypertext Markup Language, is technically not a programming language. Instead, it is a
+                    markup language that structures the content and defines the layout of a web page. HTML uses tags and
+                    elements to describe the different components of a webpage, such as headings, paragraphs, images,
+                    links, and more. These elements provide structure and meaning to the content but lack the dynamic
+                    capabilities found in traditional programming languages.</em></p>
+            <h3><strong>HTML vs CSS</strong></h3>
+            <p><em>While both HTML and CSS are integral parts of web development, they serve distinct purposes:</em></p>
+            <p>As mentioned earlier, HTML is responsible for structuring the content of a web page. It defines the
+                different components and their hierarchy, determining how information is organized. HTML tags provide
+                semantic meaning to the content, enabling web browsers and search engines to understand the structure of
+                the page. HTML forms the foundation of a website, acting as the skeletal structure on which CSS brings
+                life and style.</p>
+            <br>
+            <h3><strong>Collaborative Relationship: HTML and CSS</strong></h3>
+            <p>HTML and CSS work together collaboratively to create web pages that are both visually appealing and
+                semantically structured. HTML defines the underlying content and organizes it into meaningful sections
+                using tags and elements. CSS then takes over, leveraging selectors and rules to style the HTML elements
+                and transform them into a visually pleasing presentation.</p>
+            <br>
+            <p>It's important to note that while HTML and CSS are distinct technologies, learning them together is
+                essential for aspiring web developers. Mastery of both languages allows developers to create engaging
+                and responsive websites that offer optimal user experiences. </p>
+            <br>
+            <h3><strong>The Evolution of HTML and CSS</strong></h3>
+            <p>HTML and CSS have evolved over time to keep up with the changing demands of web development. New versions
+                and specifications are introduced to introduce modern features, improve accessibility, and ensure
+                compatibility across different browsers and devices.</p>
+            <p>HTML5, the latest version of HTML, introduced numerous new elements and APIs, including video and audio
+                support, canvas for graphics rendering, geolocation, local storage, and semantic tags like<em>(header,
+                    nav, section, and article)</em>. These additions made it easier to create rich, interactive web
+                experiences.</p>
+            <p><em>In conclusion</em>, HTML and CSS are not programming languages in the traditional sense but are
+                critical components of web development. HTML structures and provides meaning to content, while CSS adds
+                visual styles and layout. Together, they form the foundation for building captivating and user-friendly
+                websites. By understanding their unique roles and capabilities, aspiring web developers can leverage the
+                power of HTML and CSS to create remarkable online experiences.</p>
+
+        </section>
+
+        <section id="secreferences" hidden="true">
+            <h2>References</h2>
+            <a href="https://en.wikipedia.org/wiki/HTML#" target="_blank">Wikipedia: HTML</a>
+            <a href="https://www.tynker.com/blog/html-and-css-basics/" target="_blank">Tynker: HTML and CSS Basics</a>
+            <a href="https://en.wikipedia.org/wiki/HTML_Application" target="_blank">Wikipedia: HTML Application</a>
+            <a href="https://en.wikipedia.org/wiki/Character_encodings_in_HTML#Character_references"
+                target="_blank">Wikipedia: Character encodings in HTML</a>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools: HTML Tutorial</a>
+        </section>
 
 
 
 
-    <h3>Transitional versus strict</h3>
-<p>HTML 4 defined three different versions of the language: Strict, Transitional (once called Loose), and Frameset. The Strict version is intended for new documents and is considered best practice, while the Transitional and Frameset versions were developed to make it easier to transition documents that conformed to older HTML specifications or did not conform to any specification to a version of HTML 4. The Transitional and Frameset versions allow for presentational markup, which is omitted in the Strict version. Instead, cascading style sheets are encouraged to improve the presentation of HTML documents. Because XHTML 1 only defines an XML syntax for the language defined by HTML 4, the same differences apply to XHTML 1 as well.</p>
-<p><em>The Transitional version allows the following parts of the vocabulary, which are not included in the Strict version:</em></p>
-<p>A looser content model</p>
-<ul>
-    <li>Inline elements and plain text are allowed directly in: <em>body, blockquote, form, noscript and noframes</em></li>
-    <li><strong>Presentation related elements</strong></li>
 
-<li>underline (u) (Deprecated. can confuse a visitor with a hyperlink.)</li>
-<li>strike-through (s)</li>
-<li>center (Deprecated. use CSS instead.)</li>
-<li>font (Deprecated. use CSS instead.)</li>
-<li>basefont (Deprecated. use CSS instead.)</li>
-<br>
-<li><strong>Presentation related attributes</strong></li>
-<li>background (Deprecated. use CSS instead.) and bgcolor (Deprecated. use CSS instead.) attributes for body (required element according to the W3C.) element.</li>
-<li>align (Deprecated. use CSS instead.) attribute on div, form, paragraph (p) and heading (h1...h6) elements</li>
-<li>align (Deprecated. use CSS instead.), noshade (Deprecated. use CSS instead.), size (Deprecated. use CSS instead.) and width (Deprecated. use CSS instead.) attributes on hr element</li>
-<li>align (Deprecated. use CSS instead.), border, vspace and hspace attributes on img and object (caution: the object element is only supported in Internet Explorer (from the major browsers)) elements</li>
-<li>align (Deprecated. use CSS instead.) attribute on legend and caption elements</li>
-<li>align (Deprecated. use CSS instead.) and bgcolor (Deprecated. use CSS instead.) on table element</li>
-<li>nowrap (Obsolete), bgcolor (Deprecated. use CSS instead.), width, height on td and th elements</li>
-<li>bgcolor (Deprecated. use CSS instead.) attribute on tr element</li>
-<li>clear (Obsolete) attribute on br element</li>
-<li>compact attribute on dl, dir and menu elements</li>
-<li>type (Deprecated. use CSS instead.), compact (Deprecated. use CSS instead.) and start (Deprecated. use CSS instead.) attributes on ol and ul elements</li>
-<li>type and value attributes on li element</li>
-<li>width attribute on pre element</li>
-<li><strong>Elements in Transitional specification</strong></li>
-<li>menu (Deprecated. use CSS instead.) list (no substitute, though the unordered list, is recommended)</li>
-<li>dir (Deprecated. use CSS instead.) list (no substitute, though the unordered list is recommended)</li>
-<li>isindex (Deprecated.) (element requires server-side support and is typically added to documents server-side, form and input elements can be used as a substitute)</li>
-<li>applet (Deprecated. use the object element instead.)</li>
-<li>The language (Obsolete) attribute on script element (redundant with the type attribute).</li>
-<li><strong>Frame related entities</strong></li>
-<li>iframe</li>
-<li>noframes</li>
-<li>target (Deprecated in the map, link and form elements.) attribute on a, client-side image-map (map), link, form and base elements</li>
-<li>The Frameset version includes everything in the Transitional version, as well as the frameset element (used instead of body) and the frame element.</li>
-</ul>
-</section>
-
-<section id="secquiz"  hidden="true" >
-   <h2>Wanna try some quiz on HTML?</h2>
-   <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAksVHbZfHNz4c2g0U53KlMqeCogNW6S248S5uP6Y95ua1ig/viewform" target="_blank"><button><em>Click here to Take the Quiz</em></button></a>
-</section>
-
-<section id ="secreferences" hidden="true">
-    <h2>References</h2>
-    <a href="https://en.wikipedia.org/wiki/HTML#" target="_blank">Wikipedia: HTML</a>
-    <a href="https://www.tynker.com/blog/html-and-css-basics/" target="_blank">Tynker: HTML and CSS Basics</a>
-    <a href="https://en.wikipedia.org/wiki/HTML_Application" target="_blank">Wikipedia: HTML Application</a>
-    <a href="https://en.wikipedia.org/wiki/Character_encodings_in_HTML#Character_references" target="_blank">Wikipedia: Character encodings in HTML</a>
-    <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools: HTML Tutorial</a>
-</section>
-
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'html')" id="defaultOpen">html</button>
-  <button class="tablinks" onclick="openCity(event, 'attributes')">attributes</button>
-  <button class="tablinks" onclick="openCity(event, 'css')">css</button>
-</div>
-
-
-
-<div id="introduction" class="tabcontent">
-  <h3>introduction</h3>
-  <p>HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser.</p>
-</div>
-
-<div id="attributes" class="tabcontent">
-  <h3>attributes</h3>
-  <p>Attributes provide additional information about HTML elements.</p>
-</div>
-
-<div id="css" class="tabcontent">
-  <h3>css</h3>
-  <p>CSS is used for styling web pages.</p>
-</div>
-
-
-
-
-</main>
+    </main>
     <footer>
-        <marquee><p>&copy; 2026 HTML Learning Hub. Built with pure HTML & CSS.</p></marquee>
+        <marquee>
+            <p>&copy; 2026 HTML Learning Hub. Built with pure HTML & CSS.</p>
+        </marquee>
     </footer>
-<script>
-    function menu_selector(element) {
-        console.log(element.id);
-        // Remove 'active' class from all menu items
-        const menuItems = document.querySelectorAll('nav a');
-        menuItems.forEach(item => item.classList.remove('active'));
+    <script>
+        function menu_selector(element) {
+            console.log(element.id);
+            // Remove 'active' class from all menu items
+            const menuItems = document.querySelectorAll('nav a');
+            menuItems.forEach(item => item.classList.remove('active'));
 
-    element.classList.add('active');
+            element.classList.add('active');
 
-        // Add 'active' class to the clicked menu item
-        element.classList.add('active');
+            // Add 'active' class to the clicked menu item
+            element.classList.add('active');
 
-        if(element.id === 'intro') {
-        document.getElementById('secintro').hidden = false; 
-        document.getElementById('secattributes').hidden = true;
-        document.getElementById('secsemantic').hidden = true;
-        document.getElementById('secquiz').hidden = true;
-        document.getElementById('seccss').hidden = true;
-        document.getElementById('secreferences').hidden = true;
-        }if(element.id === 'attributes') {
-        document.getElementById('secintro').hidden = true; 
-        document.getElementById('secattributes').hidden = false;
-        document.getElementById('secsemantic').hidden = true;
-        document.getElementById('quiz').hidden = true;
-        document.getElementById('seccss').hidden = true;
-        document.getElementById('secreferences').hidden = true;
-        }if(element.id === 'semantic') {
-        document.getElementById('secintro').hidden = true; 
-        document.getElementById('secattributes').hidden = true;
-        document.getElementById('secsemantic').hidden = false;
-        document.getElementById('secquiz').hidden = true;
-        document.getElementById('seccss').hidden = true;
-        document.getElementById('secreferences').hidden = true;
-        }if(element.id === 'quiz') {
-        document.getElementById('secintro').hidden = true; 
-        document.getElementById('secattributes').hidden = true;
-        document.getElementById('secsemantic').hidden = true;
-        document.getElementById('secquiz').hidden = false;
-        document.getElementById('seccss').hidden = true;
-        document.getElementById('secreferences').hidden = true;
-        }if(element.id === 'css') {
-        document.getElementById('secintro').hidden = true; 
-        document.getElementById('secattributes').hidden = true;
-        document.getElementById('secsemantic').hidden = true;
-        document.getElementById('secquiz').hidden = true;
-        document.getElementById('seccss').hidden = false;
-        document.getElementById('secreferences').hidden = true;
-        }if(element.id === 'references') {
-        document.getElementById('secintro').hidden = true; 
-        document.getElementById('secattributes').hidden = true;
-        document.getElementById('secsemantic').hidden = true;
-        document.getElementById('secquiz').hidden = true;
-        document.getElementById('seccss').hidden = true;
-        document.getElementById('secreferences').hidden = false;
-    }
-}
-function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+            if (element.id === 'intro') {
+                document.getElementById('secintro').hidden = false;
+                document.getElementById('secattributes').hidden = true;
+                document.getElementById('sectags').hidden = true;
+                document.getElementById('secquiz').hidden = true;
+                document.getElementById('secreferences').hidden = true;
+            } if (element.id === 'attributes') {
+                document.getElementById('secintro').hidden = true;
+                document.getElementById('secattributes').hidden = false;
+                document.getElementById('sectags').hidden = true;
+                document.getElementById('quiz').hidden = true;
+                document.getElementById('secreferences').hidden = true;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+            } if (element.id === 'tags') {
+                document.getElementById('secintro').hidden = true;
+                document.getElementById('secattributes').hidden = true;
+                document.getElementById('sectags').hidden = false;
+                document.getElementById('secquiz').hidden = true;
+                document.getElementById('secreferences').hidden = true;
+            } if (element.id === 'quiz') {
+                document.getElementById('secintro').hidden = true;
+                document.getElementById('secattributes').hidden = true;
+                document.getElementById('sectags').hidden = true;
+                document.getElementById('secquiz').hidden = false;
+                document.getElementById('secreferences').hidden = true;
+            } if (element.id === 'references') {
+                document.getElementById('secintro').hidden = true;
+                document.getElementById('secattributes').hidden = true;
+                document.getElementById('sectags').hidden = true;
+                document.getElementById('secquiz').hidden = true;
+                document.getElementById('secreferences').hidden = false;
+            }
+        }
+        function openTab(evt, tabName) {
+            // 1. Hide all elements with class="tab-content"
+            const contents = document.querySelectorAll(".tab-content");
+            contents.forEach(content => content.style.display = "none");
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+            // 2. Remove the "active" class from all buttons
+            const buttons = document.querySelectorAll(".tab-btn");
+            buttons.forEach(btn => btn.classList.remove("active"));
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+            // 3. Show the current tab and add an "active" class to the button
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
 
-</script>
+    </script>
 </body>
-</html>
 
 </html>

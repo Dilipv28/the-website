@@ -1,96 +1,105 @@
-body{
-    background-color:rgb(173, 230, 176);
-    color:black;
+body {
+    background-color: rgb(31 192 236 / 69%);
+    color: black;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-
+    animation: fadeIn 1s ease-in-out;
 
 }
-header{
-    color:rgb(31, 178, 236);
-     font-size: 100px; 
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-align: center; 
+
+header {
+    color: rgb(201, 243, 15);
     text-decoration: none;
-    text-transform:uppercase ;
+    text-transform: uppercase;
 }
-h2{
-    color:rgb(139, 0, 139);
+
+h2 {
+    color: blue;
     font-size: 25px;
-    text-align:left;
+    text-align: left;
     text-decoration: none;
-    text-transform:uppercase;   
+    text-transform: uppercase;
 
 }
-nav{
-    font-family: Arial, sans-serif; 
-    background-color: ghostwhite;
-    display:flex;
+
+nav {
+    font-family: Arial, sans-serif;
+    background-color: azure;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;  
-    text-decoration: none;  
-    font-size: 30px;
-}
-p{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:20px;
-
-    
-}
-a{
     text-decoration: none;
-    font-size: 30px;
-    color:darkblue;
+    font-size: 20px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+
+}
+
+a {
+    text-decoration: none;
+
+    font-size: 20px;
+    color: darkblue;
     font-weight: bold;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display:flex;
-    gap: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    gap: 20px;
     padding: 15px;
     margin: 0;
-    
-  }
-a:hover {
-    color: #25aa04;
-    
+
 }
 
-button{
-    background-color:rgb(201, 214, 21);
-    color:rgb(127, 208, 255);
+a:hover {
+    color: #25aa04;
+
+}
+
+button {
+    background-color: cyan;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(28, 36, 40);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
 }
-h3{
+
+h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:rgb(28, 91, 209);
-    font-size:28px;
+    color: rgb(28, 91, 209);
+    font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
 
 }
-strong{
-    color:rgb(224, 111, 35);
+
+strong {
+    color: rgb(224, 111, 35);
     font-weight: bold;
 }
-ul{
+
+ul {
     list-style-type: square;
     padding-left: 20px;
-    font-size:25px;
+    font-size: 25px;
 }
-marquee{
-    color:darkcyan;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+marquee {
+    color: rgba(186, 26, 218, 0.911);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     font-weight: bold;
 }
-em{
-    color:rgb(1, 24, 11);
+
+em {
+    color: rgb(1, 24, 11);
     font-weight: bold;
 }

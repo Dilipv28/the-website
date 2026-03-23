@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Editorial | Digital Magazine</title>
+    <style>
+        /* 1. Global Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fdfcfb;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* 2. Header & Logo */
+        header {
+            text-align: center;
+            border-bottom: 4px double #1a1a1a;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            font-weight: 900;
+        }
+
+        .issue-info {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-family: sans-serif;
+        }
+
+        /* 3. Main Magazine Grid */
+        .magazine-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 4. Hero Article (Spans 3 columns) */
+        .hero-article {
+            grid-column: span 3;
+            border-right: 1px solid #ddd;
+            padding-right: 30px;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 400px;
+            background: #e0e0e0;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .hero-article h2 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .hero-article p {
+            font-size: 1.2rem;
+            column-count: 2;
+            /* Newspaper style columns */
+            column-gap: 20px;
+        }
+
+        /* 5. Sidebar (Spans 1 column) */
+        .sidebar {
+            grid-column: span 1;
+        }
+
+        .sidebar h3 {
+            border-top: 2px solid #1a1a1a;
+            padding-top: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .side-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .side-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .side-item small {
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        /* 6. Footer / Secondary Row */
+        .sub-grid {
+            grid-column: span 4;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #1a1a1a;
+            padding-top: 20px;
+        }
+
+        .sub-item img {
+            width: 100%;
+            height: 150px;
+            background: #eee;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .magazine-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-article,
+            .sidebar,
+            .sub-grid {
+                grid-column: span 1;
+                border: none;
+                padding: 0;
+            }
+
+            .hero-article p {
+                column-count: 1;
+            }
+
+            .sub-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="issue-info">Volume 04 • March 2025 • The Design Issue</div>
+        <h1>THE CHRONICLE</h1>
+    </header>
+
+    <main class="magazine-grid">
+        <!-- Main Story -->
+        <article class="hero-article">
+            <div class="hero-img"
+                style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8NjoUmJuwQtXVjtMviIz2ey7wNvmocJopw&s'); background-size: cover;">
+            </div>
+            <small>Featured Feature</small>
+            <h2>The Future of Minimalist Architecture in Urban Spaces</h2>
+            <p>
+                In the heart of the modern city, a new movement is taking root. Architects are moving away from the
+                glass-and-steel giants of the past toward organic shapes and sustainable materials. This shift
+                represents more than just a style change; it's a fundamental rethink of how we interact with our
+                environment. By focusing on light, air, and natural flow, these designers are creating spaces that
+                breathe.
+            </p>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Trending Now</h3>
+            <div class="side-item">
+                <small>Lifestyle</small>
+                <h4>10 Tips for a Balanced Workspace</h4>
+            </div>
+            <div class="side-item">
+                <small>Technology</small>
+                <h4>Is AI the New Creative Director?</h4>
+            </div>
+            <div class="side-item">
+                <small>Fashion</small>
+                <h4>The Return of Monochrome Neutrals</h4>
+            </div>
+        </aside>
+
+        <!-- Bottom Row -->
+        <section class="sub-grid">
+            <div class="sub-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgyVIZl27gjYeWlJgVnsyvUyUO834evFC7kw&s"
+                    alt="Travel">
+                <h4>Hidden Retreats</h4>
+            </div>
+            <div class="sub-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk39ZOV8SKisV7rY0Od9AUfAuhyRT2smjFCw&s"
+                    alt="Art">
+                <h4>Modern Sculpture</h4>
+            </div>
+            <div class="sub-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4sDBC_2GYG4IDbLPqGFUrXlfHMotk7m55MQ&s"
+                    alt="Food">
+                <h4>The Vegan Chef</h4>
+            </div>
+            <div class="sub-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVVLzrSF4WNiQvo8Gb1wbwik8irsu7ogU_ZQ&s"
+                    alt="Culture">
+                <h4>City Jazz Nights</h4>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

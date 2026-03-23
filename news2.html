@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Living City // 2026</title>
+    <style>
+        /* 1. Emerald Dark Mode Branding */
+        :root {
+            --bg-color: #080a09;
+            --text-color: #e0e0e0;
+            --accent-color: #00ff88;
+            /* Bioluminescent Green */
+            --serif-font: 'Playfair Display', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.7;
+        }
+
+        /* 2. Hero Section - Bold Typography */
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 1px solid #1a1a1a;
+            background: radial-gradient(circle at center, #0a1f16 0%, #080a09 100%);
+        }
+
+        .hero h1 {
+            font-size: 5.5rem;
+            line-height: 0.9;
+            text-transform: uppercase;
+            font-weight: 900;
+            max-width: 1000px;
+            margin-bottom: 25px;
+            letter-spacing: -3px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            text-shadow: 0 0 40px rgba(0, 255, 136, 0.25);
+        }
+
+        /* 3. Article Layout */
+        .article-body {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 100px 20px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 80px;
+        }
+
+        /* 4. Pull Quote */
+        .pull-quote {
+            grid-column: span 2;
+            font-family: 'Georgia', serif;
+            font-size: 3.2rem;
+            font-style: italic;
+            text-align: left;
+            color: #fff;
+            padding: 100px 0;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+            margin: 60px 0;
+            line-height: 1.1;
+        }
+
+        /* 5. Content Styling */
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            color: #b0b0b0;
+            font-size: 1.1rem;
+        }
+
+        .drop-cap::first-letter {
+            font-size: 5rem;
+            float: left;
+            margin-right: 15px;
+            color: var(--accent-color);
+            font-family: 'Georgia', serif;
+            line-height: 0.7;
+            margin-top: 10px;
+        }
+
+        /* 6. The Sidebar "Status" Card */
+        .data-card {
+            background: #0d110f;
+            padding: 45px;
+            border-right: 4px solid var(--accent-color);
+            box-shadow: -20px 20px 0px rgba(0, 255, 136, 0.03);
+        }
+
+        /* Responsive */
+        @media (max-width: 850px) {
+            .article-body {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .pull-quote {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <p style="letter-spacing: 10px; opacity: 0.6; font-size: 0.7rem; margin-bottom: 15px;">URBAN ECOLOGIES // VOL 04
+        </p>
+        <h1>Can <span class="highlight">Concrete</span> Learn to Breathe?</h1>
+        <p style="margin-top: 25px; font-weight: 300; letter-spacing: 2px; color: #888;">The Rise of the Photosynthetic
+            Skyline</p>
+    </section>
+
+    <main class="article-body">
+        <section>
+            <h2>The Oxygen Revolution</h2>
+            <p class="drop-cap">The 20th century was defined by the conquest of nature—iron, glass, and
+                climate-controlled boxes. But as we cross the 2026 threshold, the blueprint is changing. Architects are
+                no longer just building structures; they are planting them.</p>
+            <p>From algae-powered facades in Berlin to the vertical forests of Singapore, the boundary between
+                "Inhabited Space" and "Living Ecosystem" is vanishing. We are moving toward a city that doesn't just sit
+                on the land, but breathes with it.</p>
+        </section>
+
+        <section>
+            <div class="data-card">
+                <h3 style="color:#fff; margin-bottom: 20px; font-size: 1.5rem;">The Green Metric</h3>
+                <ul style="list-style: none; font-size: 0.9rem; color: #888;">
+                    <li style="margin-bottom: 20px; border-bottom: 1px solid #1a1a1a; padding-bottom: 10px;">
+                        🌿 <strong style="color: var(--accent-color);">40%</strong> Increase in urban canopy
+                        requirements for 2027.
+                    </li>
+                    <li style="margin-bottom: 20px; border-bottom: 1px solid #1a1a1a; padding-bottom: 10px;">
+                        💧 <strong style="color: var(--accent-color);">Closed-Loop</strong> water filtration integrated
+                        into structural pillars.
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        ☀️ <strong style="color: var(--accent-color);">Mycelium</strong> insulation outperforming
+                        traditional fiberglass.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <blockquote class="pull-quote">
+            "A building should be like a tree: it should produce more energy than it consumes and purify the air around
+            it."
+        </blockquote>
+
+        <section>
+            <h2>Bio-Logic vs. Bio-Mimicry</h2>
+            <p>It is one thing to cover a building in vines; it is another to build a structure from
+                <strong>self-healing bio-concrete</strong>. The future isn't just about the aesthetics of green—it's
+                about the metabolism of the city. We are seeing the birth of the "Carbon-Negative" skyscraper, a titan
+                of industry that acts as a giant filter for the metropolitan atmosphere.
+            </p>
+        </section>
+
+        <section>
+            <h2>The Human Habit</h2>
+            <p>Psychologically, the "Living Building" solves more than just environmental crises. It addresses the
+                'Nature Deficit' of modern life. When the view from the 50th floor is a cascading waterfall and a
+                moss-covered terrace, the stress of the digital grind begins to dissolve into the organic quiet.</p>
+        </section>
+    </main>
+
+</body>
+
+</html>
