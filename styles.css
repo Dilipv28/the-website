@@ -1,7 +1,7 @@
 body{
     font-family: Arial, sans-serif;
     background-color:honeydew;
-    color:rgb(0, 162, 255);
+    color:rgba(55, 150, 204, 0.507);
     margin: 0;
     padding: 20px;
     text-align:start;
@@ -63,12 +63,13 @@ a:hover {
 
 
 nav {
-    font-family: Arial, sans-serif; 
-    display:flex;
-    justify-content: space-between;
+    font-family: 'Georgia', serif;
+    color: black;
+    display: flex;
+    justify-content:space-around;
     align-items: center;
-    padding: 20px;  
     text-decoration: none;
+}
 img {
     display: contents;
     border-radius: 10px;
@@ -82,7 +83,7 @@ section{
     height:50px;
     width:50px;
 }
-    home {
+home {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration-color: antiquewhite;
@@ -138,8 +139,7 @@ video {
     align-items: center;
 
 }
-                      
-   legend{
+legend{
     font-family: Arial, sans-serif;
     color:black;
     text-transform: uppercase;
