@@ -78,9 +78,16 @@ a {
    border-left: 2px solid #1a1a1a;
    margin-left: 1px;
 }
+.navlink a{
+   border-left: 2px solid #1a1a1a;
+   margin-left: 1px;
+}
+nav a:hover, nav a.active {
+    color: #0476aa;
+}
    #date-display {
             font-size: 1.2rem;
-            color: #aaa;
+            color:#0b73eb;
             margin-bottom: 10px;
             display: block;
             letter-spacing: 2px;
@@ -289,7 +296,7 @@ a {
             </div>
         </footer>
  <script>
-        function updateDateTime() {
+    function updateDateTime() {
             const now = new Date();
 
             // 1. Format the Date (e.g., Monday, March 23, 2026)
@@ -301,40 +308,16 @@ a {
             };
             const dateString = now.toLocaleDateString(undefined, dateOptions);
 
-           
-            // 2. Inject into HTML
-            document.getElementById('date-display').textContent = dateString;
-           
-            
-            // 3. Update the machine-readable attribute
-            const fullISO = now.toISOString();
-            document.getElementById('date-display').setAttribute('datetime', fullISO);
-        }
-
-        // Update every second
-        setInterval(updateDateTime, 10);
-
-        // Initial call
-        updateDateTime();
-
-
-    // 
-    let count=0;
-    
-        function updateDateTime() {
-            const now = new Date();
-
-           
             // 2. Format the Time (e.g., 5:06:34 PM)
             const timeString = now.toLocaleTimeString();
 
             // 3. Inject into HTML
-           // document.getElementById('date-display').textContent = dateString;
+            document.getElementById('date-display').textContent = dateString;
             document.getElementById('time-display').textContent = timeString;
             
             // 4. Update the machine-readable attribute
             const fullISO = now.toISOString();
-           
+            document.getElementById('date-display').setAttribute('datetime', fullISO);
         }
 
         // Update every second
@@ -342,9 +325,9 @@ a {
 
         // Initial call
         updateDateTime();
-
-
-        // Replace 'mysite.com' with your actual domain name
+    // 
+    let count=0;
+    // Replace 'mysite.com' with your actual domain name
         const namespace = 'mysite.com'; 
         const key = 'visits';
 
