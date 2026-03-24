@@ -7,7 +7,8 @@
 
 body {
     font-family: 'Georgia', serif;
-    background-color: #fdfcfb;
+  background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     color: #1a1a1a;
     line-height: 1.6;
 
@@ -51,7 +52,16 @@ a {
     display: flex;
     padding: 15px;
     margin: 0;
+    /*border-left: 2px solid #1a1a1a;*/
 }
+.navlink a{
+   border-left: 2px solid #1a1a1a;
+   margin-left: 1px;
+}
+#home{
+ background-color: azure;
+}
+
 
 
 /* 3. Main Magazine Grid */
@@ -116,7 +126,7 @@ a {
 }
 
 .side-item small {
-    color: #666;
+    color: hsl(0, 1%, 36%);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -173,3 +183,41 @@ a {
 ul {
     font-size: 1.2rem;
 }
+footer{
+    text-align: center;
+    background-color:floralwhite;
+    opacity:70%;
+    color:rgb(153, 141, 119);
+    font-weight: bold;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+#time-display {
+    width:30%;
+    float:right;
+    text-align:left;
+    font-weight: bold;
+    color:darkblue;
+}
+#visited{
+    width:30%;
+    float:left;
+    text-align:right;
+    font-weight: bold;
+    color:darkcyan;
+}
+#magic{
+    width:30%;
+    text-align:center;
+    color:darkblue;
+}
+#ftr{
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+

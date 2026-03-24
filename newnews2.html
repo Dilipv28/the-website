@@ -10,6 +10,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #fcfbf8;
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
             color: #333;
         }
 
@@ -37,6 +38,55 @@
             letter-spacing: 2px;
             color: #8b7e66;
         }
+        /* 2. Header & Logo */
+header {
+    text-align: center;
+    border-bottom: 4px double #1a1a1a;
+    margin-bottom: 40px;
+
+}
+
+header h1 {
+    font-size: 3.1rem;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 900;
+}
+nav {
+    font-family: 'Georgia', serif;
+    color: black;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-decoration: none;
+
+}
+.navlink{
+    display:flex;
+}
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+}
+.navlink a{
+   border-left: 2px solid #1a1a1a;
+   margin-left: 1px;
+}
+   #date-display {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-bottom: 10px;
+            display: block;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
 
         /* News Layout */
         .news-layout {
@@ -113,14 +163,67 @@
             .news-layout { grid-template-columns: 1fr; }
             .news-item { grid-template-columns: 1fr; }
         }
+       footer{
+    text-align: center;
+    background-color:floralwhite;
+    opacity:70%;
+    color:rgb(153, 141, 119);
+    font-weight: bold;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+#time-display {
+    width:30%;
+    float:right;
+    text-align:left;
+    font-weight: bold;
+    color:darkblue;
+}
+#visited{
+    width:30%;
+    float:left;
+    text-align:right;
+    font-weight: bold;
+    color:darkcyan;
+}
+#magic{
+    width:30%;
+    text-align:center;
+    color:darkblue;
+}
+#ftr{
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
     </style>
 </head>
 <body>
-
+       <header>
+        <nav>
+           <a href="magazine.html" class="logo">
+                <img src="logo.png" alt="Logo" width="100px">
+            </a>
+         <h1>spiritual Magic</h1>
+         <div class="navlink">
+            <a href="magazine.html" id="home">Home</a>
+            <a href="homenews1.html"  id="home">About</a>
+            <a href="./newnews2.html" style="background-color: azure;"    id="news">News</a>
+            <a href="./contactnews3.html" id="contact">Contact</a>
+            <a href="./featurenews4.html" id="features">Features</a>
+        </div></nav>
+    </header>
     <div class="container">
         <header class="news-header">
-            <h2>The Bulletin</h2>
-            <span class="date">Monday, March 23, 2026</span>
+             <h2>The Bulletin</h2>
+           <div class="clock-wrapper">
+        <time id="date-display"></time>
+    </div>
         </header>
 
         <div class="news-layout">
@@ -178,6 +281,84 @@
             </aside>
         </div>
     </div>
+   <footer>
+            <div id="ftr">
+              <span id="visited">Number of visited:</span>
+                 <span id="magic">Spiritual Magic magazine:with delight and passion.</span>
+                <span><time id="time-display">0</time></span>
+            </div>
+        </footer>
+ <script>
+        function updateDateTime() {
+            const now = new Date();
 
+            // 1. Format the Date (e.g., Monday, March 23, 2026)
+            const dateOptions = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            const dateString = now.toLocaleDateString(undefined, dateOptions);
+
+           
+            // 2. Inject into HTML
+            document.getElementById('date-display').textContent = dateString;
+           
+            
+            // 3. Update the machine-readable attribute
+            const fullISO = now.toISOString();
+            document.getElementById('date-display').setAttribute('datetime', fullISO);
+        }
+
+        // Update every second
+        setInterval(updateDateTime, 10);
+
+        // Initial call
+        updateDateTime();
+
+
+    // 
+    let count=0;
+    
+        function updateDateTime() {
+            const now = new Date();
+
+           
+            // 2. Format the Time (e.g., 5:06:34 PM)
+            const timeString = now.toLocaleTimeString();
+
+            // 3. Inject into HTML
+           // document.getElementById('date-display').textContent = dateString;
+            document.getElementById('time-display').textContent = timeString;
+            
+            // 4. Update the machine-readable attribute
+            const fullISO = now.toISOString();
+           
+        }
+
+        // Update every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call
+        updateDateTime();
+
+
+        // Replace 'mysite.com' with your actual domain name
+        const namespace = 'mysite.com'; 
+        const key = 'visits';
+
+async function getGlobalVisits() {
+    const response = await fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`);
+    const data = await response.json();
+    
+   
+}
+count++;
+ document.getElementById('visited').innerText = `Total site visits:`+ count;
+//getGlobalVisits();
+    
+   
+    </script>
 </body>
 </html>
