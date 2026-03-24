@@ -3,47 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple JS Clock</title>
+    <title>Live Date and Time Clock</title>
     <style>
-        #clock {
-            font-size: 5rem;
-            border: 2px solid #00ff88;
-            padding: 20px 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .clock-wrapper {
+            text-align: center;
+            background: #222;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #444;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        #date-display {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-bottom: 10px;
+            display: block;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        #time-display {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #00d4ff;
+            display: block;
         }
     </style>
 </head>
 <body>
 
-    <div id="clock">00:00:00</div>
+    <div class="clock-wrapper">
+        <time id="date-display"></time>
+        <time id="time-display"></time>
+    </div>
 
     <script>
-        function updateClock() {
+        function updateDateTime() {
             const now = new Date();
+
+            // 1. Format the Date (e.g., Monday, March 23, 2026)
+            const dateOptions = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            const dateString = now.toLocaleDateString(undefined, dateOptions);
+
+            // 2. Format the Time (e.g., 5:06:34 PM)
+            const timeString = now.toLocaleTimeString();
+
+            // 3. Inject into HTML
+            document.getElementById('date-display').textContent = dateString;
+            document.getElementById('time-display').textContent = timeString;
             
-            // Extract hours, minutes, and seconds
-            let hours = now.getHours();
-            let minutes = now.getMinutes();
-            let seconds = now.getSeconds();
-
-            // Pad single digits with a leading zero (e.g., 5 becomes 05)
-            hours = hours < 10 ? '0' + hours : hours;
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-
-            // Create the time string
-            const timeString = `${hours}:${minutes}:${seconds}`;
-
-            // Update the HTML element
-            document.getElementById('clock').textContent = timeString;
+            // 4. Update the machine-readable attribute
+            const fullISO = now.toISOString();
+            document.getElementById('date-display').setAttribute('datetime', fullISO);
         }
 
-        // Call updateClock every 1000ms (1 second)
-        setInterval(updateClock, 1000);
+        // Update every second
+        setInterval(updateDateTime, 1000);
 
-        // Run immediately so the clock doesn't start at 00:00:00
-        updateClock();
+        // Initial call
+        updateDateTime();
     </script>
+
 </body>
 </html>
