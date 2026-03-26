@@ -1,188 +1,153 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color:honeydew;
-    color:rgba(55, 150, 204, 0.507);
+/* General Reset */
+* {
     margin: 0;
-    padding: 20px;
-    text-align:start;
-    text-decoration:none;
-    
-}
-header{
-    
-    text-decoration: none;
-    width:100%;
-     font-size:25px;
-    text-transform: uppercase;
-    background-color:deepskyblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:black;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;  
-    text-align: center;
-    
-}
-h1 {
-    color:rgb(196, 255, 255);
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    text-transform:uppercase ;
-
-}
-h2 {
-    color:hsl(147, 71%, 43%);
-    text-align:left;
-    text-decoration: none;
-    text-transform:uppercase;
-}
-strong {
-    font-family: Arial, sans-serif;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
-   text-decoration: none;
-   color:darkblue;
-   font-weight: bold;
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display:flex;
-    gap: 20px; 
-    padding: 15px;
-    margin: 0;
-    text-transform: uppercase;
-  }
-a:hover {
-    color: #04AA6D;
-  }
+body {
+ background-image: linear-gradient( 98.4deg,  rgba(254,251,191,1) 16.6%, rgba(187,240,211,1) 81.8% );
+    line-height: 1.6;
+}
 
+/* Navigation Bar */
+header {
+    background-image: radial-gradient( circle 476px at 54.8% 51.5%,  rgba(168,229,253,1) 0%, rgba(244,244,254,1) 42.3%, rgba(244,244,254,1) 100.2% );
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
 
 nav {
-    font-family: 'Georgia', serif;
-    color: black;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+/* Logo and Title */
+h1 {
+    font-size: 1.5rem;
+    color: #58a6ff; /* Modern tech blue */
+}
+
+/* Nav Links & Buttons */
+nav a {
+    color: #537574;
     text-decoration: none;
-}
-img {
-    display: contents;
-    border-radius: 10px;
-    margin: 10px;
-    transition: transform 0.3s ease;
-}
-img:hover {
-    transform: scale(1.1);
-}
-section{
-    height:50px;
-    width:50px;
-}
-home {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration-color: antiquewhite;
-    color:black;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-    top:auto;
-    left: 50%;
-    right: 50%;
-    bottom: 10%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 20px;
-}
-about {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:black;
-    
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-contact {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:black;
-    background-color: whitesmoke;
-   
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-video {
-
-    height: 300px;
-    width:300px ;
-    border-radius: 10px;
-    margin-top: 20px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
+nav a:hover {
+    color: #58a6ff;
 }
-legend{
-    font-family: Arial, sans-serif;
-    color:black;
-    text-transform: uppercase;
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
- }
 
+button {
+  background-image: radial-gradient( circle 926px at 5.9% 50.7%,  rgba(31,223,255,0.56) 0.4%, rgba(255,235,31,0.18) 56.4%, rgba(255,115,8,0.66) 90.5% );
+  color: #010013;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
 
+button:hover {
+    background-color: #2ea043;
+    transform: translateY(-2px);
+}
 
+button a {
+    margin: 0;
+    color: white;
+}
 
-  button{
+/* Sections */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    color: #010013;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #30363d;
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #00ffb3c4; 
-    font-size:20px ;
+}
+/* 7. Contact Form & Inputs */
+input[type="text"], 
+input[type="email"] {
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: block;
+}
 
-    text-decoration: none;
-    border-radius: 5px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+input[type="submit"] {
+    background: #202124;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
     font-weight: bold;
-    transition: background 0.3s;
-  }
-
-  .button-link:hover {
-    background-color: #0056b3; 
-  }
-  btn-submit{
-            width: 100%;
-            padding: 12px;
-            margin-top: 20px;
-            border: none;
-            border-radius: 5px;
-            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-  }
+}
 
 
-    
- }
+/* 5. Custom Carousel Styling */
+carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+}
 
+carousel img {
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact Section & Map */
+#contact .div {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    flex: 1;
+    min-width: 300px;
+}
+
+iframe {
+    border-radius: 12px;
+    width: 100%; /* Makes map responsive */
+}
+
+/* Footer */
+footer {
+    background:white;
+    color:rgb(0, 66, 209);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+marquee {
+    font-weight: 300;
+    opacity: 0.8;
+}
+.link{
+    color:blanchedalmond;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
